@@ -7,7 +7,9 @@ NTFY_TOPIC = "league_stalker"  # Match your subscribed ntfy topic
 
 PLAYERS_TO_MONITOR = [
     {"game_name": "Dingothejungle", "tag_line": "69420", "region": "americas", "platform": "na1"},
-    {"game_name": "Doublelift", "tag_line": "NA1", "region": "americas", "platform": "na1"},
+    {"game_name": "FreakyBob", "tag_line": "3344", "region": "americas", "platform": "na1"},
+    {"game_name": "Dingothejungle", "tag_line": "69420", "region": "americas", "platform": "na1"},
+
 ]
 
 HEADERS = {"X-Riot-Token": RIOT_API_KEY}
