@@ -3,10 +3,10 @@ import requests
 
 # --- CONFIGURATION ---
 RIOT_API_KEY = os.environ.get("RIOT_API_KEY")
-NTFY_TOPIC = "riot_tracker_alert_7712"  # Match your subscribed ntfy topic
+NTFY_TOPIC = "league_stalker"  # Match your subscribed ntfy topic
 
 PLAYERS_TO_MONITOR = [
-    {"game_name": "Faker", "tag_line": "KR1", "region": "asia", "platform": "kr"},
+    {"game_name": "Dingothejungle", "tag_line": "69420", "region": "americas", "platform": "na1"},
     {"game_name": "Doublelift", "tag_line": "NA1", "region": "americas", "platform": "na1"},
 ]
 
