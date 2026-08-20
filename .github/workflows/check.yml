@@ -1,0 +1,27 @@
+name: League Match Monitor
+
+on:
+  schedule:
+    # Runs automatically every 5 minutes (minimum cron interval supported by GitHub Actions)
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # Allows manual trigger testing anytime
+
+jobs:
+  check-matches:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Match Checker
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+        run: python tracker.py
